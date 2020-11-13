@@ -4,16 +4,13 @@
 //---------------------------------------------------------------------
 
 var firebaseConfig = {
-
-  // Your API stuff goes here;  get it from firebase console
-  apiKey: "AIzaSyBekHDqDcKR0NrrcltHw6tmEw3mbDLRGS0",
-  authDomain: "mango-3a256.firebaseapp.com",
-  databaseURL: "https://mango-3a256.firebaseio.com",
-  projectId: "mango-3a256",
-  storageBucket: "mango-3a256.appspot.com",
-  messagingSenderId: "941279657994",
-  appId: "1:941279657994:web:967fbe2a315ef308471ff3"
-  
+  apiKey: "AIzaSyALGIfZcFg1SOIshoxW8Z1_eUxEkXKD1KA",
+  authDomain: "shoptimiser-aaee5.firebaseapp.com",
+  databaseURL: "https://shoptimiser-aaee5.firebaseio.com",
+  projectId: "shoptimiser-aaee5",
+  storageBucket: "shoptimiser-aaee5.appspot.com",
+  messagingSenderId: "487759359315",
+  appId: "1:487759359315:web:398aeea2c1f8373a1045a6"
 };
 
 // Initialize Firebase
