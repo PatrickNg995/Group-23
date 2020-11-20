@@ -23,8 +23,6 @@
 
 .navbar-brand {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
 }
 
@@ -166,12 +164,12 @@ input[type=text] {
 }
 
 .title {
-    grid-column: 2/4;
+    width: 100%;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 10px;
     padding-bottom: 5px;
-    color: #82B7DC;
+    color: white;
 }
 
 .bg-dark {
