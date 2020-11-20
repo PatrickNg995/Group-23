@@ -87,6 +87,12 @@
     padding-top: 4em;
     text-align: center;
 }
+.title mb-0 h1{
+    color: white;
+}
+
+
+
 
 #Category button{
     
@@ -130,7 +136,27 @@
     color: rgb(241, 233, 233);
   }
 
+
+
+  .btn-primary {
+    color: #fff;
+    background-color: #3466aa;
+    border-color: #000000;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color:	#ff9601;
+    border-color: #0062cc;
+  }
+
   
+
+  .bg-dark {
+    background-color:#114084 !important;
+  }
+
+
 
   
   #backicon{
