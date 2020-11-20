@@ -41,13 +41,12 @@
     </nav>
 
     <!-- Login widget -->
-    <div class="login">
-        <h1 id="firebaseui-auth-container"></h1>
-    </div>
+    <div class="login"><h1 id="firebaseui-auth-container"></h1></div>
+    <div id="loader">Loading...</div>
 
     <!-- Footer task bar -->
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#login">
             <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -100,8 +99,8 @@
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
-    <!-- !!Replace with our own database later!!  -->
-    <script src="scripts/firebase_api_patrick.js"> </script>
+    <!-- Shoptimiser database  -->
+    <script src="scripts/firebase_api.js"> </script>
 
     <!-- Your own JavaScript functions included here    -->
     <script src="scripts/login.js"></script>
