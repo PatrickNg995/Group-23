@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Product</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -11,15 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Firebase CSS for Authentication UI -->
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
-
     <!-- Optional styles and scripts of your own -->
-<<<<<<< HEAD
-    <link rel="stylesheet" href="css/styleSearch.css">
-=======
-    <link rel="stylesheet" href="css/style.css">
->>>>>>> eac1f778c0435632371c41032cbb4f01de8ea6e1
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
@@ -30,6 +25,7 @@
     <!-- Header Navigation Bar -->
     <nav class="navbarTop navbar-dark bg-dark">
         <a class="navbar-brand">
+           
                 <path fill-rule="evenodd"
                     d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
                 <path
@@ -37,13 +33,70 @@
                 <path fill-rule="evenodd"
                     d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
             </svg>
-            <div class="title mb-0 h1">Login</div>
+            <div class="title mb-0 h1">Search</div>
         </a>
     </nav>
 
-    <!-- Login widget -->
-    <div class="login"><h1 id="firebaseui-auth-container"></h1></div>
-    <div id="loader">Loading...</div>
+    <!-- Search form -->
+    <div class="search">
+        <img src="images/search.png" alt="search" class="searchIcon">
+        <form autocomplete="off" action="/action_page.php" class="searchBar">
+            <div class="autocomplete" style="width:100%;">
+                <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            </div>
+            <!-- <input type="submit"> -->
+        </form>
+    </div>
+
+    <div class="productInfo">
+        <div class="priceList">
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+            <div class="price">
+                <p>$12.34 - Store</p>
+            </div>
+        </div>
+        <div class="productProfile">
+            <div class="image"> </div>
+            <div class="name">
+                <h3>Product</h3>
+            </div>
+            <div class="description">
+                <p>Description</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer task bar -->
     <nav class="navbar navbar-dark bg-dark">
@@ -89,6 +142,7 @@
             </a>
         </a>
     </nav>
+    </div>
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
@@ -103,17 +157,11 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
-    <!-- Firebase libraries from CDN -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-
-    <!-- !!Replace with our own database later!!  -->
+    <!--------------------------------------------------------------------->
+    <!-- JS files: Your own JavaScript functions included here    -->
+    <!--------------------------------------------------------------------->
+    <!-- Shoptimiser database  -->
     <script src="scripts/firebase_api_team23.js"> </script>
-
-    <!-- Your own JavaScript functions included here    -->
-    <script src="scripts/login.js"></script>
 
 </body>
 
