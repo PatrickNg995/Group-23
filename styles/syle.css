@@ -1,0 +1,71 @@
+.navbar {
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar1 {
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-brand {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.icon {
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.title {
+    margin-top: -10%;
+    margin-left: 25%;
+    font-size: 2rem;
+    color: white;
+}
+
+.inputs {
+    margin-left: 20%;
+    width: 100%;
+    height: auto;
+}
+
+.le-btn {
+    margin-left: 60%;
+    width: 20%;
+}
+
+.plus {
+    margin-top: 10%;
+    margin-left: 345%;
+}
+
+.location-input {
+    padding-left: 5%;
+    width: 33%;
+    height: 2%;
+    margin-left: 5%;
+}
+
+#listHead {
+    padding: 2%;
+}
+
+/** Blue color scheme */
+.navbar-dark .navbar-brand1 {
+    color: #fff;
+}
+
+.bg-dark {
+    background-color: #114084 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #114084;
+    border-color: #114084;
+}
