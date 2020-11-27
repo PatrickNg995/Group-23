@@ -1,0 +1,165 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbarTop {
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-brand {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.icon{
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.icon2 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.title {
+    grid-column: 2/4;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.search {
+
+    background-color: gainsboro;
+}
+
+.searchIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 13px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.form-control {
+    background-color: gainsboro;
+    height: 60px;
+    border: 0px;
+}
+
+
+#Category {
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+    margin: 0 auto;
+    padding-top: 4em;
+    text-align: center;
+}
+#electronicpage {
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+    margin: 0 auto;
+    padding-top: 4em;
+    text-align: center;
+}
+.title mb-0 h1{
+    color: white;
+}
+
+
+
+
+#Category button{
+    
+    margin-left: 1em;
+    border-style: solid;
+    border-color: rgb(134, 123, 123);
+    border-radius: 1em;
+    border-width: 2px;
+}
+@media (max-width: 575.98px) { 
+    #Category{
+        grid-template-columns: 1fr;
+    }
+    #electronicpage{
+        grid-template-columns: 1fr;
+    }
+   
+    
+ }
+
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    #Category{
+        grid-template-columns: 1fr 1fr;
+    }
+    #electronicpage{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+  }
+
+  @media (min-width: 1200px) { 
+    #Category{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #electronicpage{
+        grid-template-columns: 1fr 1fr;
+    }
+   
+  }
+  .navbar-dark .navbar-brand {
+    color: rgb(241, 233, 233);
+  }
+
+
+
+  .btn-primary {
+    color: #fff;
+    background-color: #3466aa;
+    border-color: #000000;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color:	#ff9601;
+    border-color: #0062cc;
+  }
+
+  
+
+  .bg-dark {
+    background-color:#114084 !important;
+  }
+
+
+
+  
+  #backicon{
+      margin-top: 10px;
+      margin-left: 1em;
+  }
