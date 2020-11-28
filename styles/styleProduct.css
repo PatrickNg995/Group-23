@@ -1,0 +1,59 @@
+.productInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.priceList {
+    width: 100%;
+    height: 90vh;
+    background-color: gainsboro;
+    display: grid;
+    grid-auto-rows: 75px;
+}
+
+.productProfile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.image {
+    grid-row: 1/3;
+    width: 150px;
+    height: 150px;
+    background-color: gainsboro;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+
+.description {
+    margin: 0 auto;
+    padding: 15px;
+    grid-row: 4/7;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.name {
+    grid-row: 3/4;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.price {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-shadow: 0 3px 3px -3px gray, 0 -3px 3px -3px gray;
+    background-color: gainsboro;
+}
+
+.price>p {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+}

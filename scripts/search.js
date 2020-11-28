@@ -1,3 +1,7 @@
+var item;
+
+/* The basis for this function was provided by w3schools */
+/* Handles the typeahead autocomplete search function */
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
@@ -35,6 +39,8 @@ function autocomplete(inp, arr) {
                     /*close the list of autocompleted values,
                     (or any other open lists of autocompleted values:*/
                     closeAllLists();
+                    item = inp.value;
+                    window.location.href = "searchProduct.html";
                 });
                 a.appendChild(b);
             }
@@ -57,8 +63,10 @@ function autocomplete(inp, arr) {
             /*and and make the current item more visible:*/
             addActive(x);
         } else if (e.keyCode == 13) {
-            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+            /*If the ENTER key is pressed, redirect and save search term*/
             e.preventDefault();
+            window.location.href = "searchProduct.html";
+            item = document.getElementById("myInput").value;
             if (currentFocus > -1) {
                 /*and simulate a click on the "active" item:*/
                 if (x) x[currentFocus].click();
@@ -100,29 +108,44 @@ function autocomplete(inp, arr) {
     });
 }
 
-var products = new Array();
+var products;
 
-var testing = ["test", "test2", "cup"];
-
+/* Gets the list of products from the database. */
 db.collection("products")
     .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            // doc.data() is never undefined for query doc snapshots
-            var list = querySnapshot.docs.map(doc => doc.data());
-
-            list = list[0];
-            console.log(list);
-            products = list;
+    .then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+            /* Casts the product list into an array. */
+            products = Object.values(doc.data());
             console.log(products);
         });
     })
-    .catch(function(error) {
+    .catch(function (error) {
         console.log("Error getting documents: ", error);
     });
-    
-console.log(testing);
-      
-autocomplete(document.getElementById("myInput"), products);
+// Add a short delay for the data to be retrieved
+setTimeout(function () {
+    autocomplete(document.getElementById("myInput"), products);
+}, 2000);
 
 
+/* Locally stores the user's search term */
+function saveSearchFromUser() {
+    document.getElementById("myBtn").addEventListener('click', function () {
+        item = document.getElementById("myInput").value;
+
+        window.location.href = "searchProduct.html"
+
+        localStorage.setItem("item", item);
+    });
+}
+saveSearchFromUser();
+
+/* Retrieves the user's search term */
+function displaySearch() {
+    item = localStorage.getItem("item");
+    console.log(item);
+    $("#search-go-here").append('<p>' + item + '</p>');
+
+}
+displaySearch();

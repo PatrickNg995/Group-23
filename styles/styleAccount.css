@@ -1,0 +1,64 @@
+
+.navbar1{
+    width: 102vw;
+}
+
+.navbar-brand1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 25%;
+}
+
+.navbar {
+    width: 102vw;
+}
+
+.navbar-brand {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.icon{
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.pencil{
+    margin-left: 90%;
+    margin-top: -10%;
+    color: white;
+}
+
+.container{
+    margin-left: 8%;
+    padding-top: 20%;
+}
+
+.accInfo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+.profile-pic{
+    margin-left: 35%;
+    margin-top: 30%;
+}
+
+/** Blue color scheme */
+
+.navbar-dark .navbar-brand1 {
+    color: #fff;
+
+  }
+
+.bg-dark {
+    background-color: #114084 !important;
+}
+
+
+
+
+
