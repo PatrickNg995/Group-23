@@ -1,0 +1,85 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+}
+
+.navbar1{
+    width: 100vw;
+}
+
+.navbar-brand1{
+    margin-left: 5%;
+}
+.navbar {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbarTop {
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-brand {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.icon{
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.icon2{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/** Blue color scheme */
+
+.navbar-dark .navbar-brand1 {
+    color: #fff;
+  }
+
+.bg-dark {
+    background-color: #114084 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3466AA;
+    border-color:  #3466AA;
+  }
+
+  .card-title {
+    color: #2379b6;
+  }
+
+  .card-text {
+    color: #77c3fa;
+  }
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid rgba(255,231,196, 0.125);
+    border-radius: 0.25rem;
+  }
