@@ -109,6 +109,8 @@
     #electronicpage{
         grid-template-columns: 1fr;
     }
+    
+
    
     
  }
@@ -121,6 +123,7 @@
         grid-template-columns: 1fr 1fr;
     }
     
+    
   }
 
   @media (min-width: 1200px) { 
@@ -129,6 +132,24 @@
     }
     #electronicpage{
         grid-template-columns: 1fr 1fr;
+    }
+
+    section{
+        display: gird;
+        width: 100%;
+        grid-template-areas: 
+        "productpicture productdescription"
+        "productdetail productdetail";
+
+    }
+    #productpicture {
+        grid-area: productpicture;
+    }
+    #productdescription{
+        grid-area: productdescription;
+    }
+    #productdetail{
+        grid-area: productdetail;
     }
    
   }
@@ -155,11 +176,50 @@
   .bg-dark {
     background-color:#114084 !important;
   }
-
-
-
   
   #backicon{
       margin-top: 10px;
       margin-left: 1em;
   }
+
+  .img-thumbnail{
+      width: 200px;
+      height: auto;
+      margin-top: 20px;
+  }
+
+  #pricecomparesion{
+      text-align: center;
+  }
+
+  section{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+
+  #producticon{
+      margin-top: 20px;
+  }
+  #productdetail{
+      font-family: 'Roboto Slab', serif;
+      margin-top: 50px;
+  }
+
+  h3{
+      font-weight: 800;
+      color: blue;
+
+  }
+
+  body{
+      height: 100%;
+  }
+  
+
+  
+
+  
+
+  
