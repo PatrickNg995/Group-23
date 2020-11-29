@@ -1,5 +1,3 @@
-var item;
-
 /* The basis for this function was provided by w3schools */
 /* Handles the typeahead autocomplete search function */
 function autocomplete(inp, arr) {
@@ -39,8 +37,6 @@ function autocomplete(inp, arr) {
                     /*close the list of autocompleted values,
                     (or any other open lists of autocompleted values:*/
                     closeAllLists();
-                    item = inp.value;
-                    window.location.href = "searchProduct.html";
                 });
                 a.appendChild(b);
             }
@@ -63,10 +59,9 @@ function autocomplete(inp, arr) {
             /*and and make the current item more visible:*/
             addActive(x);
         } else if (e.keyCode == 13) {
-            /*If the ENTER key is pressed, redirect and save search term*/
+            /*If the ENTER key is pressed, precent default function*/
             e.preventDefault();
-            window.location.href = "searchProduct.html";
-            item = document.getElementById("myInput").value;
+            
             if (currentFocus > -1) {
                 /*and simulate a click on the "active" item:*/
                 if (x) x[currentFocus].click();
@@ -109,6 +104,7 @@ function autocomplete(inp, arr) {
 }
 
 var products;
+var item;
 
 /* Gets the list of products from the database. */
 db.collection("products")
@@ -129,7 +125,7 @@ setTimeout(function () {
 }, 2000);
 
 
-/* Locally stores the user's search term */
+/* Locally stores the user's search term and redirects to the product page */
 function saveSearchFromUser() {
     document.getElementById("myBtn").addEventListener('click', function () {
         item = document.getElementById("myInput").value;
