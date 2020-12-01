@@ -217,6 +217,20 @@
   body{
       height: 100%;
   }
+  #productlist{
+      text-align: center;
+  }
+
+ .w-100{
+     margin-top: 10px;
+ }
+ .row{
+     margin-top: 10px;
+ }
+  
+
+  
+
   
 
   
