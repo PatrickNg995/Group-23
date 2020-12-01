@@ -1,0 +1,81 @@
+body {
+    background-color: white;
+}
+
+.content {
+    padding-top: 117px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbarTop {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+.navbar-brand {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bg-dark {
+    background-color: #114084 !important;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.icon {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white !important;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+}
+
+.login {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* potentially obsolete */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+/* potentially obsolete */
+.icon2 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        padding-top: 117px;
+        padding-bottom: 50px;
+        width: 100%;
+        margin: 0 auto;
+    }
+  }

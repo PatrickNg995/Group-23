@@ -1,89 +1,48 @@
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100vw;
-}
-
-.card {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10%;
-}
-
-.navbar {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-.navbarTop {
-    width: 100%;
-    height: 70px;
-}
-
-.navbar-brand {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.login {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.searchIcon {
-    width: 30px;
-    height: 30px;
-    margin-left: 12px;
-    margin-top: 8px;
-    position: absolute;
-}
-
-.form-control {
-    background-color: gainsboro;
-    height: 60px;
-    border: 0px;
-}
-
 .productInfo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 200px; 
     width: 100%;
     height: 100%;
 }
 
 .priceList {
+    grid-row: 3/4;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background-color: gainsboro;
     display: grid;
-    grid-auto-rows: 10%;
+    grid-auto-rows: 75px;
 }
 
 .productProfile {
+    grid-row: 1/2;
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
 }
 
 .image {
-    grid-row: 1/3;
-    width: 150px;
-    height: 150px;
+    grid-row: 3/6;
+    grid-column: 1/2;
+    width: 350px;
+    height: 350px;
     background-color: gainsboro;
-    margin: 0 auto;
-    margin-top: 8%;
+    margin-left: 50px;
+ 
 }
 
 .description {
-    margin: 0 auto;
-    grid-row: 4/7;
+    grid-column: 2/3;
+    grid-row: 3/6;
+    margin-top: 100px;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 
 .name {
+    grid-column: 2/4;
     grid-row: 3/4;
-    margin: 0 auto;
     margin-top: 5%;
 }
 
@@ -96,99 +55,59 @@
 }
 
 .price>p {
-    margin: 0 auto;
-}
-
-.searchBar {
-    margin-left: 55px;
-}
-
-.autocomplete {
-    position: relative;
-    display: inline-block;
-}
-
-.autocomplete-items {
-    position: absolute;
-    border: 1px solid #82B7DC;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
-    left: 0;
-    right: 0;
-}
-
-.autocomplete-items div {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #82B7DC;
-    border-bottom: 1px solid #d4d4d4;
-}
-
-/*when hovering an item:*/
-.autocomplete-items div:hover {
-    background-color: #e9e9e9;
-}
-
-/*when navigating through the items using the arrow keys:*/
-.autocomplete-active {
-    background-color: DodgerBlue !important;
-    color: #82B7DC;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-#myInput {
-    color: 	#82B7DC;
-}
-
-.search {
-    background-color: #3466AA;
-}
-
-input {
-    border: 1px solid transparent;
-    background-color: #3466AA;
-    padding: 10px;
-    font-size: 16px;
-}
-
-input[type=text] {
-    background-color:#3466AA;
-    color: #82B7DC;
-    width: 100%;
-}
-
-.title {
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 10px;
-    padding-bottom: 5px;
-    color: white;
-}
-
-.bg-dark {
-    background-color: #114084 !important;
-}
-
-.icon {
-    margin: 0 auto;
-    margin-top: 5px;
-    color: #82B7DC !important;
-}
-
-.icon2 {
-    float: left;
     margin-left: 10px;
-    margin-top: 10px;
-    color: #82B7DC !important;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 
-body {
-    background-color: 	#ffffff;
+.table {
+    margin-top: 150px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .priceList {
+        grid-row: 2/3;
+        width: 100%;
+        height: 90vh;
+        background-color: gainsboro;
+        display: grid;
+        grid-auto-rows: 75px;
+    }
+    
+    .image {
+        grid-row: 1/3;
+        width: 150px;
+        height: 150px;
+        background-color: gainsboro;
+        margin-left: 20px;
+        margin-top: 8%;
+    }
+    
+    .price>p {
+        margin-left: 10px;
+        margin-top: 17px;
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+
+    .description {
+        margin: 0 auto;
+        padding: 20px;
+        grid-row: 5/8;
+        grid-column: 1/5;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+
+    .name {
+        grid-column: 2/5;
+        grid-row: 1/2;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .table {
+        margin-top: 0px;
+    }
+  }
