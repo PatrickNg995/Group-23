@@ -4,6 +4,8 @@ body {
 
 .content {
     padding-top: 117px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -68,3 +70,12 @@ body {
     margin-top: 10px;
     color: white !important;
 }
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        padding-top: 117px;
+        padding-bottom: 50px;
+        width: 100%;
+        margin: 0 auto;
+    }
+  }

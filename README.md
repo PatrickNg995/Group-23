@@ -1,4 +1,4 @@
-## Team 23 Application (Title)
+## Team 23 Application Shoptimizer
 
 * [General info](#general-info)
 * [Technologies](#technologies)
@@ -44,7 +44,7 @@ Tips for file naming files and folders:
 * use lowercase with no spaces
 * use dashes (not underscore) for word separation
 
-## Members + Contriutions
+## Members + Contributions
 Patrick Ng: search.html
 Spence Morrison: shoppinglist.html
 Yang Sun: Category.html
