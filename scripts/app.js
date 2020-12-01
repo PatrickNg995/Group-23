@@ -13,15 +13,13 @@ function getUserLocation() {
     })
 }
 
-///** Could not get this to function where these are written into database
-
 function getItem() {
     document.getElementById("go").addEventListener('click', function () {
         var listItem = document.getElementById("listItem").value;
         console.log(listItem);
 
         firebase.auth().onAuthStateChanged(function (items) {
-            db.collection("Lists").doc(items)
+            db.collection("Lists").doc("items")
             .update({
                "item": listItem
             })
@@ -35,8 +33,8 @@ function getItem2() {
         var listItem2 = document.getElementById("listItem2").value;
         console.log(listItem2);
 
-        firebase.auth().onAuthStateChanged(function (Lists) {
-            db.collection("Lists").doc(items)
+        firebase.auth().onAuthStateChanged(function (items) {
+            db.collection("Lists").doc("items")
             .update({
                "item2": listItem2
             })
@@ -50,8 +48,8 @@ function getItem3() {
         var listItem3 = document.getElementById("listItem3").value;
         console.log(listItem3);
 
-        firebase.auth().onAuthStateChanged(function (Lists) {
-            db.collection("Lists").doc(items)
+        firebase.auth().onAuthStateChanged(function (items) {
+            db.collection("Lists").doc("items")
             .update({
                "item3": listItem3
             })
@@ -65,10 +63,10 @@ function getItem4() {
         var listItem4 = document.getElementById("listItem4").value;
         console.log(listItem4);
 
-        firebase.auth().onAuthStateChanged(function (user) {
-            db.collection("Lists").doc(items)
+        firebase.auth().onAuthStateChanged(function (items) {
+            db.collection("Lists").doc("items")
             .update({
-               "item5": listItem4
+               "item4": listItem4
             })
         })
     })
@@ -80,8 +78,8 @@ function getItem5() {
         var listItem5 = document.getElementById("listItem5").value;
         console.log(listItem5);
 
-        firebase.auth().onAuthStateChanged(function (Lists) {
-            db.collection("Lists").doc(items)
+        firebase.auth().onAuthStateChanged(function (items) {
+            db.collection("Lists").doc("items")
             .update({
                "item5": listItem5
             })
@@ -95,8 +93,8 @@ function getItem6() {
         var listItem6 = document.getElementById("listItem6").value;
         console.log(listItem6);
 
-        firebase.auth().onAuthStateChanged(function (Lists) {
-            db.collection("Lists").doc(items)
+        firebase.auth().onAuthStateChanged(function (items) {
+            db.collection("Lists").doc("items")
             .update({
                "item6": listItem6
             })
@@ -110,8 +108,8 @@ function getItem7() {
         var listItem7 = document.getElementById("listItem7").value;
         console.log(listItem7);
 
-        firebase.auth().onAuthStateChanged(function (Lists) {
-            db.collection("Lists").doc(items)
+        firebase.auth().onAuthStateChanged(function (items) {
+            db.collection("Lists").doc("items")
             .update({
                "item7": listItem7
             })
@@ -119,4 +117,4 @@ function getItem7() {
     })
 }
 getItem7();
-//*/
+
