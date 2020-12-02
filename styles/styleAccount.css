@@ -26,23 +26,18 @@
 }
 
 .pencil{
-    margin-left: 90%;
-    margin-top: -10%;
     color: white;
-}
-
-.container{
-    margin-left: 8%;
-    padding-top: 20%;
+    margin-left: 90%;
+    margin-top: -15%;
 }
 
 .accInfo{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -5%;
     margin-top: 20%;
 }
 
-.profile-pic{
+.profile{
+    color: white;
     margin-left: 35%;
     margin-top: 30%;
 }
@@ -51,7 +46,6 @@
 
 .navbar-dark .navbar-brand1 {
     color: #fff;
-
   }
 
 .bg-dark {
