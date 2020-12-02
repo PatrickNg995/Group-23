@@ -12,6 +12,7 @@ function getUserLocation() {
         })
     })
 }
+getUserLocation();
 
 function getItem() {
     document.getElementById("go").addEventListener('click', function () {
