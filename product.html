@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <!-- Optional styles and scripts of your own -->
-    <link rel="stylesheet" href="css/styleCategory.css">
+    <link rel="stylesheet" href="styles/styleCategory.css">
 
 
 
@@ -36,13 +36,13 @@
         <nav class="navbarTop navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <!--Replace this icon with a menu icon-->
-                <a id="backicon" href="productlist.html">
+                <div id="backicon" onclick="location.href='productlist.html'">
                     <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill"
                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z" />
                     </svg>
-                </a>
+                </div>
                 <span class="title mb-0 h1">Samsung Galaxy S10 128G</span>
             </a>
         </nav>
@@ -90,8 +90,8 @@
 
 
         <form action="">
-            <button id="pricecomparesion" type="button" class="btn btn-primary"><a href="Pricecompare.html">Compare
-                    Price</a></button>
+            <button id="pricecomparesion" type="button" class="btn btn-primary" onclick="location.href='Pricecompare.html'">Compare
+                    Price</button>
         </form>
 
         <div id="producticon">
