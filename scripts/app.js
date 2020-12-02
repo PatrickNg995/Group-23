@@ -12,6 +12,7 @@ function getUserLocation() {
         })
     })
 }
+getUserLocation();
 
 ///** Could not get this to function where these are written into database
 
