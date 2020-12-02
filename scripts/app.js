@@ -14,8 +14,6 @@ function getUserLocation() {
 }
 getUserLocation();
 
-///** Could not get this to function where these are written into database
-
 function getItem() {
     document.getElementById("go").addEventListener('click', function () {
         var listItem = document.getElementById("listItem").value;
@@ -69,7 +67,7 @@ function getItem4() {
         firebase.auth().onAuthStateChanged(function () {
             db.collection("Lists").doc("items")
                 .update({
-                    "item5": listItem4
+                    "item4": listItem4
                 });
         })
     })

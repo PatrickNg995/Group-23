@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
 }
 
+.navbarTop + .content {
+    padding-top: 202px;
+  }
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -18,11 +22,15 @@ body {
     width: 100%;
     height: 70px;
     position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
 }
 
 .navbar-brand {
     width: 100%;
     margin: 0 auto;
+    grid-column: 2/3;
 }
 
 .bg-dark {
@@ -46,9 +54,17 @@ body {
 }
 
 .card {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 215px !important;
+    z-index: -1;
+}
+
+.card-img-top {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .login {
@@ -56,24 +72,31 @@ body {
     padding-bottom: 100px;
 }
 
-/* potentially obsolete */
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
 }
 
-/* potentially obsolete */
+.left-icon {
+    grid-column: 1/2;
+    margin: 0 auto;
+}
+
+.right-icon {
+    grid-column: 3/4;
+    margin: 0 auto;
+}
+
 .icon2 {
-    float: left;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: white !important;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
     .content {
-        padding-top: 117px;
+        padding-top: 127px;
         padding-bottom: 50px;
         width: 100%;
         margin: 0 auto;

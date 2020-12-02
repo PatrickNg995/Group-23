@@ -45,6 +45,6 @@ Tips for file naming files and folders:
 * use dashes (not underscore) for word separation
 
 ## Members + Contributions
-Patrick Ng: search.html
+Patrick Ng: index.html
 Spence Morrison: shoppinglist.html
 Yang Sun: Category.html
