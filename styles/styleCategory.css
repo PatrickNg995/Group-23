@@ -230,22 +230,10 @@
  button{
      color: white;
  }
- .card-img-top1{
+ #cart{
      text-align: center;
-     margin-top: 60px;
-     width: 500px;
-     height: 450px;
  }
  
- .card-img-top{
-     width: 400px;
-     height: 500px;
- }
- .card-img-top3{
-     margin-top: 55px;
-     width: 300px;
-     height: 450px;;
- }
 
  
   
