@@ -1,37 +1,9 @@
-.navbar {
-    width: 90%;
-    position: fixed;
-    bottom: 0;
-}
 
-.navbar1 {
-    width: 100%;
-    height: 70px;
-}
-
-.navbar-brand {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 auto;
-}
-
-.icon {
-    margin: 0 auto;
-    margin-top: 5px;
-}
-
-.title {
-    margin-top: -10%;
-    margin-left: 25%;
-    font-size: 2rem;
-    color: white;
-}
 
 .inputs {
     margin-left: 20%;
-    width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 .le-btn {

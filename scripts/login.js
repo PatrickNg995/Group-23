@@ -58,3 +58,31 @@ var uiConfig = {
 // The start method will wait until the DOM is loaded.
 // Inject the login interface into the HTML
 ui.start('#firebaseui-auth-container', uiConfig);
+
+/*
+//---------------------------------------------------------------
+        // This function will check if the user is signed in.
+        // If yes, then 
+        //     1) the "login" text will change to "Logout"
+        //     2) and, the href will go to "index.html" where any logged in 
+        //        users will be logged out.
+        //----------------------------------------------------------------
+        function disableLoginLink() {
+            firebase.auth().onAuthStateChanged(function (user) {
+                if (user) {
+                    console.log("change it to logout");
+                    document.getElementById("loginLink").href = "index.html";
+                }
+            })
+        }
+        disableLoginLink();
+        //------------------------------------------------
+        // Call this function at the begining of index.html
+        // to logout any users before you do anything else
+        //-------------------------------------------------
+        function logout() {
+            console.log("logging out user");
+            FirebaseAuth.getInstance().signOut();
+        }
+        logout(); 
+*/

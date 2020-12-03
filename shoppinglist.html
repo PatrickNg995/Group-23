@@ -14,6 +14,7 @@
 
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href='styles/syle.css'>
+    <link rel="stylesheet" href='styles/styleBase.css'>
 
 
 </head>
@@ -23,32 +24,45 @@
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
     <!-- Header Navigation Bar -->
-    <nav class="navbar1 navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">
-            <svg width="30" height="30" viewBox="0 0 16 16" class="plus" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    <nav class="navbarTop navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <path fill-rule="evenodd"
+                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+            <path
+                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+            <path fill-rule="evenodd"
+                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
             </svg>
+            <div class="title mb-0 h1">Shopping List</div>
         </a>
-        <p class="title">Shopping list</p>
-    </nav>
-    <!-- List header -->
-    <h2 id="listHead" style="color:#114084;">Your List:</h2>
 
-    <!-- Contains all of the inputs for the shopping list items -->
-    <div class="inputs">
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">1.</span>
+        <a class="right-icon" href="login.html" id="loginLink"><img src="images/login.png" alt="login"
+                class="icon2"></a>
+    </nav>
+
+    <div class="content">
+        <!-- List header -->
+        <h2 id="listHead" style="color:#114084;">Your List:</h2>
+
+        <!-- Contains all of the inputs for the shopping list items -->
+        <div class="inputs">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">1.</span>
+                </div>
+                <input type="text" id="listItem" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
+                <p id="itemOne"></p>
+                <p> - </p>
+                <p id="itemOne1"></p>
             </div>
-            <input type="text" id="listItem" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemOne"></p>
-            <p> - </p>
-            <p id="itemOne1"></p>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">2.</span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">2.</span>
+                </div>
+                <input type="text" id="listItem2" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
+                <p id="itemTwo"></p>
+                <p> - </p>
+                <p id="itemTwo2"></p>
             </div>
             <input type="text" id="listItem2" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
             <p id="itemTwo"></p>
@@ -59,62 +73,59 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">3.</span>
             </div>
-            <input type="text" id="listItem3" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemThree"></p>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">4.</span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">4.</span>
+                </div>
+                <input type="text" id="listItem4" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
+                <p id="itemFour"></p>
             </div>
-            <input type="text" id="listItem4" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemFour"></p>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">5.</span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">5.</span>
+                </div>
+                <input type="text" id="listItem5" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
+                <p id="itemFive"></p>
             </div>
-            <input type="text" id="listItem5" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemFive"></p>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">6.</span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">6.</span>
+                </div>
+                <input type="text" id="listItem6" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
+                <p id="itemSix"></p>
             </div>
-            <input type="text" id="listItem6" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemSix"></p>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">7.</span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">7.</span>
+                </div>
+                <input type="text" id="listItem7" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
+                <p id="itemSev"></p>
             </div>
-            <input type="text" id="listItem7" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemSev"></p>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">8.</span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">8.</span>
+                </div>
+                <input type="text" id="listItem8" placeholder="Item">
+                <p id="itemEight"></p>
             </div>
-            <input type="text" id="listItem8" placeholder="Item">
-            <p id="itemEight"></p>
         </div>
+
+        <!--Input for location (optional) -->
+        <div class="location-input">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="input-group">Your location (optional) :</span>
+            </div>
+            <input type="text" id="location" placeholder="City, Country">
+        </div>
+
+        <button type="button" id="go" class="le-btn btn-primary btn-lg">Go</button>
     </div>
-
-    <!--Input for location (optional) -->
-    <div class="location-input">
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="input-group">Your location (optional) :</span>
-        </div>
-        <input type="text" id="location" placeholder="City, Country">
-    </div>
-
-    <button type="button" id="go" class="le-btn btn-primary btn-lg">Go</button>
-
 
     <!-- Bottom Nav bar -->
-    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
         <a calss="navbar-brand" href="#">
             <a class="icon" href="index.html">
-                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="#fff"
+                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
@@ -122,17 +133,10 @@
                         d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                 </svg>
             </a>
-            <a class="icon" href="search.html">
-                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="#fff"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                    <path fill-rule="evenodd"
-                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                </svg>
-            </a>
-            <a class="icon" href="shoppinglist.html">
-                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="#fff"
+            <a class="icon" href="shoppinglist.html" id="loginLink"><img src="images/list.png" alt="list"
+                    class="icon3"></a>
+            <a class="icon" href="Category.html">
+                <svg width="30" height="30" viewBox="0 0 16 16" class="icon3" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
@@ -143,7 +147,7 @@
                 </svg>
             </a>
             <a class="icon" href="accountInfo.html">
-                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="#fff"
+                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
@@ -154,7 +158,7 @@
             </a>
         </a>
     </nav>
-    </div>
+
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->

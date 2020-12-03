@@ -27,22 +27,27 @@
     <!-- Header Navigation Bar -->
     <nav class="navbarTop navbar-dark bg-dark">
         <a class="navbar-brand">
-                <path fill-rule="evenodd"
-                    d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
-                <path
-                    d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
-                <path fill-rule="evenodd"
-                    d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+            <path fill-rule="evenodd"
+                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+            <path
+                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+            <path fill-rule="evenodd"
+                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
             </svg>
             <div class="title mb-0 h1">Login</div>
         </a>
+
+        <a class="right-icon" href="login.html" id="loginLink"><img src="images/login.png" alt="login"
+                class="icon2"></a>
     </nav>
 
     <!-- Login widget -->
-    <div class="login"><h1 id="firebaseui-auth-container"></h1></div>
+    <div class="login">
+        <h1 id="firebaseui-auth-container"></h1>
+    </div>
     <div id="loader">Loading...</div>
 
-    <!-- Footer task bar -->
+    <!-- Bottom Nav bar -->
     <nav class="navbar navbar-dark bg-dark">
         <a calss="navbar-brand" href="#">
             <a class="icon" href="index.html">
@@ -54,17 +59,10 @@
                         d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                 </svg>
             </a>
-            <a class="icon" href="search.html">
-                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                    <path fill-rule="evenodd"
-                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                </svg>
-            </a>
-            <a class="icon" href="shoppinglist.html">
-                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
+            <a class="icon" href="shoppinglist.html" id="loginLink"><img src="images/list.png" alt="list"
+                    class="icon3"></a>
+            <a class="icon" href="Category.html">
+                <svg width="30" height="30" viewBox="0 0 16 16" class="icon3" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
@@ -86,7 +84,7 @@
             </a>
         </a>
     </nav>
-
+    
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
