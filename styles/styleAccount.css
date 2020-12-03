@@ -1,55 +1,11 @@
-
-.navbar1{
-    width: 102vw;
-}
-
-.navbar-brand1 {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-left: 25%;
-}
-
-.navbar {
-    width: 102vw;
-}
-
-.navbar-brand {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 auto;
-}
-
-.icon{
-    margin: 0 auto;
-    margin-top: 5px;
-}
-
-.pencil{
-    color: white;
-    margin-left: 90%;
-    margin-top: -15%;
+.profile {
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 .accInfo{
-    margin-left: -5%;
-    margin-top: 20%;
-}
-
-.profile{
-    color: white;
-    margin-left: 35%;
-    margin-top: 30%;
-}
-
-/** Blue color scheme */
-
-.navbar-dark .navbar-brand1 {
-    color: #fff;
-  }
-
-.bg-dark {
-    background-color: #114084 !important;
+    width: 100%;
+    margin-left: -20px;
 }
 
 

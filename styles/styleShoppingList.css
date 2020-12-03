@@ -1,0 +1,33 @@
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3466AA;
+    border-color:  #3466AA;
+  }
+
+  .card-title {
+    color: #2379b6;
+  }
+
+  .card-text {
+    color: #77c3fa;
+  }
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid rgba(255,231,196, 0.125);
+    border-radius: 0.25rem;
+  }

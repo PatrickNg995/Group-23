@@ -9,9 +9,12 @@ body {
     padding-bottom: 50px;
 }
 
-.navbarTop + .content {
-    padding-top: 202px;
-  }
+.content2 {
+    padding-top: 110px;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
 
 .navbar {
     width: 100%;
