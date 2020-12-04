@@ -5,8 +5,8 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
-Team members:
+This browser based web application to compare the prices of products from a varity of stores.
+Team members: Patrick Ng, Spence Morrison, Yang Sun
 	
 ## Technologies
 Technologies used for this project:
@@ -23,16 +23,65 @@ Content of the project folder:
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
 ├── index.html               # landing HTML file, this is what users see when you come to url
+├── searchProduct.html       # shows results of searches, price comparison
+├── login.html               # allows users to log in
+├── accountInfo.html         # shows user account info
+├── category.html            # first page of categories (electronics>phones is the only path that currently has content)
+├── product.html             # displays the information of the selected product (only works with samsung galaxy S10)
+├── electronicList.html      # electronics cateogry page
+├── productList.html         # list of products of the selected category (only works for phones)
+├── iphone.html              # list of products in the iphone category
+├── huawei.html              # list of products in the huawei category
+├── shoppingList.html        # page to access the user's shopping list
 └── README.md
 
 It has the following subfolders and files:
 ├── .git                     # Folder for git repo
 ├── images                   # Folder for images
-    /blah.jpg                # 
+    /Benefit Cosmetics Brow Gel.png #          
+    /Betty Crocker Brownie Mix.png  #
+    /Blue Microphones Yeti Nano.png #
+    /gouda.jpg               #
+    /huawei30lite.jpg        #
+    /huawei30pro.jpg         #
+    /i8plus.jpg              #
+    /ip11.jpg                #
+    /ip12 pro.jpg            #
+    /Iphone 11 64GB.png      #
+    /iphone11.png            #
+    /iphone11product.png     #
+    /list.png                #
+    /login.png               #
+    /nav 5.png               #
+    /ring.jpg                #
+    /Samsung Galaxy S10 128G #
+    /samsung.jpg             #
+    /samsung2.jpg            #
+    /samsunggalaxys10black.jpg      #
+    /search.png              #
+    /search2.png             #
+    /vans.jpg                #
 ├── scripts                  # Folder for scripts
-    /blah.js                 # 
+    /accInfo.js              # 
+    /addToList.js            #
+    /error.js                #  
+    /firebase_api_team23.js  #
+    /loadList.js             #
+    /login.js                #
+    /priceList.js            #
+    /productProfile.js       #
+    /saveCategory.js         #
+    /search.js               #
+    /shoppingList.js         #
 ├── styles                   # Folder for styles
-    /blah.css                # 
+    /bootstrap.css           # 
+    /styleAccount.css        #
+    /styleBase.css           #
+    /styleCategory.css       # 
+    /styleProduct.css        #
+    /styleSearch             #
+    /styleShoppingList       #
+
 
 Firebase hosting files: 
 ├── .firebaserc...
@@ -40,11 +89,7 @@ Firebase hosting files:
 
 ```
 
-Tips for file naming files and folders:
-* use lowercase with no spaces
-* use dashes (not underscore) for word separation
-
 ## Members + Contributions
-Patrick Ng: index.html
-Spence Morrison: shoppinglist.html
-Yang Sun: Category.html
+Patrick Ng: index.html,
+Spence Morrison: shoppinglist.html,
+Yang Sun: Category.html,
