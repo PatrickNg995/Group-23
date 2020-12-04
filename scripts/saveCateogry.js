@@ -9,3 +9,4 @@ function saveSearchFromUser2() {
     });
 }
 saveSearchFromUser2();
+
