@@ -45,6 +45,7 @@ function getPriceList() {
         })
 }
 
+/* Gets the links to the store pages */
 function getLinks() {
     db.collection("links").doc(name)
         .get()

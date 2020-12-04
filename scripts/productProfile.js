@@ -1,5 +1,6 @@
 var name = localStorage.getItem("item");
 
+/* Gets the product description */
 function getDescription() {
     db.collection("descriptions").doc(name)
         .get()
@@ -16,6 +17,7 @@ function getDescription() {
         })
 }
 
+/* Gets the product's image */
 function getImage() {
     var img = "images/" + name + ".png"
     document.getElementById("image").setAttribute("src", img);
