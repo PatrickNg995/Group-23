@@ -124,7 +124,6 @@ setTimeout(function () {
     autocomplete(document.getElementById("myInput"), products);
 }, 2000);
 
-
 /* Locally stores the user's search term and redirects to the product page */
 function saveSearchFromUser() {
     document.getElementById("myBtn").addEventListener('click', function () {
@@ -145,3 +144,4 @@ function displaySearch() {
 
 }
 displaySearch();
+

@@ -52,7 +52,7 @@
 }
 
 #myInput {
-    color:	white;
+    color: white;
 }
 
 .search {
@@ -60,6 +60,7 @@
     position: fixed;
     margin-top: 70px;
     width: 100%;
+    z-index: 2;
 }
 
 input {
@@ -67,19 +68,27 @@ input {
     background-color: white;
     padding: 10px;
     font-size: 16px;
-    outline: none; 
+    outline: none;
 }
 
 input[type=text] {
-    background-color:#3466AA;
+    background-color: #3466AA;
     color: #82B7DC;
     width: 100%;
 }
 
 input[type=text]:focus {
     border-bottom: 1px solid white;
-  }
+}
 
 ::placeholder {
     color: gainsboro;
-  }
+}
+
+.card {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 215px !important;
+    z-index: 0;
+}

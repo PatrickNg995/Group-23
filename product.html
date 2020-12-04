@@ -19,10 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <!-- Optional styles and scripts of your own -->
+    <link rel="stylesheet" href="styles/styleBase.css">
     <link rel="stylesheet" href="styles/styleCategory.css">
-
-
-
 
 </head>
 
@@ -32,33 +30,35 @@
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
     <!-- Header Navigation Bar -->
-    <header>
-        <nav class="navbarTop navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <!--Replace this icon with a menu icon-->
-                <div id="backicon" onclick="location.href='productlist.html'">
-                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill"
-                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z" />
-                    </svg>
-                </div>
-                <span class="title mb-0 h1">Samsung Galaxy S10 128G</span>
-            </a>
-        </nav>
-    </header>
+    <nav class="navbarTop navbar-dark bg-dark">
+        <a class="leftIcon" href="productlist.html"><svg width="2em" height="2em" viewBox="0 0 16 16"
+                class="bi2 bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg ">
+                <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z" />
+            </svg></a>
 
-    <section>
+        <a class="navbar-brand">
+            <path fill-rule="evenodd"
+                d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+            <path
+                d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+            <path fill-rule="evenodd"
+                d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+            </svg>
+            <div class="title mb-0 h1">Products</div>
+        </a>
+
+        <a class="right-icon" href="login.html" id="loginLink"><img src="images/login.png" alt="login"
+                class="icon2"></a>
+    </nav>
+
+    <div class="content2">
         <div id="productpicture">
-            <img src="images/samsung2.jpg" alt="Samsung Galaxy" class="img-thumbnail">
-
             <img src="images/samsunggalaxys10black.jpg" alt="Samsung Galaxy" class="img-thumbnail">
-
-
         </div>
 
         <div id="productdescription">
-            <h1>Samsung Galaxy S10 128G</h1>
+            <h2>Samsung Galaxy S10 128G</h2>
             <table class="table">
                 <thead>
                     <tr>
@@ -90,24 +90,10 @@
 
 
         <form action="">
-            <button id="pricecomparesion" type="button" class="btn btn-primary" onclick="location.href='Pricecompare.html'">Compare
-                    Price</button>
+            <button type="button" class="btn btn-primary"
+                id="compare1">Compare
+                Price</button>
         </form>
-
-        <div id="producticon">
-
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-            </svg>
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg>
-        </div>
-        </div>
 
         <div id="productdetail">
             <h3>Product Review</h3>
@@ -156,64 +142,52 @@
                 charging mat for your other wirelessly charging devices.
             </p>
 
-            <h3>Reason For Buy It</h3>
+            <h3>Reasons to Buy it</h3>
             <p>If you are looking for a phone that is an upgrade from the S9 or the Apple flagship devices, then the
                 Samsung Galaxy S10e does not disappoint as it offers premium quality for manageable cost. The S10e is a
                 flat display unlike the S10 and S10+ but some people may prefer the feel as it is sturdier in the hand
                 and doesn’t lead to false input on the touch screen.</p>
 
         </div>
-
-    </section>
-
-
+    </div>
 
     <!-- Bottom Nav bar -->
-    <footer>
-        <nav class="navbar navbar-dark bg-dark">
-            <a calss="navbar-brand" href="#">
-                <a class="icon" href="index.html">
-                    <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                        <path fill-rule="evenodd"
-                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                    </svg>
-                </a>
-                <a class="icon" href="search.html">
-                    <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                        <path fill-rule="evenodd"
-                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                    </svg>
-                </a>
-                <a class="icon" href="shoppinglist.html">
-                    <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
-                        <path
-                            d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
-                        <path fill-rule="evenodd"
-                            d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
-                    </svg>
-                </a>
-                <a class="icon" href="accountInfo.html">
-                    <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
-                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                        <path fill-rule="evenodd"
-                            d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
-                    </svg>
-                </a>
+    <nav class="navbar navbar-dark bg-dark">
+        <a calss="navbar-brand" href="#">
+            <a class="icon" href="index.html">
+                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
             </a>
-        </nav>
-    </footer>
+            <a class="icon" href="shoppinglist.html" id="loginLink"><img src="images/list.png" alt="list"
+                    class="icon3"></a>
+            <a class="icon" href="category.html">
+                <svg width="30" height="30" viewBox="0 0 16 16" class="icon3" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                    <path
+                        d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                    <path fill-rule="evenodd"
+                        d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                </svg>
+            </a>
+            <a class="icon" href="accountInfo.html">
+                <svg width="30" height="30" viewBox="0 0 16 16" class="icon" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path fill-rule="evenodd"
+                        d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                </svg>
+            </a>
+        </a>
+    </nav>
 
 
     <!----------------------------------------------->
@@ -229,11 +203,18 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
+    <script src="scripts/firebase_api_team23.js"> </script>
+    <script src="scripts/saveCateogry.js"> </script>
 
-    </script>
 </body>
 
 </html>

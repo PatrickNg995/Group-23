@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="styles/styleBase.css">
     <link rel="stylesheet" href="styles/styleProduct.css">
     <link rel="stylesheet" href="styles/styleSearch.css">
-
-
 </head>
 
 <body>
@@ -26,6 +24,11 @@
     <!-------------------------------------->
     <!-- Header Navigation Bar -->
     <nav class="navbarTop navbar-dark bg-dark">
+        <a class="leftIcon" onclick="goBack()"><svg width="2em" height="2em" viewBox="0 0 16 16"
+                class="bi2 bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg ">
+                <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z" />
+            </svg></a>
         <a class="navbar-brand">
             <path fill-rule="evenodd"
                 d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
@@ -55,11 +58,8 @@
     <!-- Product info -->
     <div class="content">
         <div class="productInfo">
-            <!--<div class="priceList" id="list">
-                
-            </div>-->
             <div class="productProfile">
-                <div class="image"> </div>
+                <div class="image"><img src="" alt="image" id="image"></div>
                 <div class="name">
                     <h3 id="prodName">Loading...</h3>
                 </div>
@@ -82,7 +82,7 @@
             </table>
         </div>
     </div>
-    
+
 
     <!-- Bottom Nav bar -->
     <nav class="navbar navbar-dark bg-dark">
@@ -96,8 +96,8 @@
                         d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                 </svg>
             </a>
-            <a class="icon" href="shoppinglist.html" id="loginLink"><img src="images/list.png" alt="list"
-                    class="icon3"></a>
+            <a class="icon" href="shoppingList.html" id="loginLink"><img src="images/list.png" alt="list"
+                class="icon3"></a>
             <a class="icon" href="Category.html">
                 <svg width="30" height="30" viewBox="0 0 16 16" class="icon3" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
@@ -145,18 +145,19 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-    <!-- Shoptimiser database  -->
     <script src="scripts/firebase_api_team23.js"> </script>
 
-    <!-- Search script -->
     <script src="scripts/search.js"> </script>
     <script src="scripts/priceList.js"> </script>
 
-    <!-- Product profile script -->
     <script src="scripts/productProfile.js"> </script>
     <script src="scripts/error.js"> </script>
 
-
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
 </body>
 
 </html>
