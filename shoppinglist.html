@@ -43,7 +43,7 @@
                 class="icon2"></a>
     </nav>
 
-    <div class="content2">
+    <div class="content3">
         <!-- List header -->
         <h2 id="listHead" style="color:#114084;">Your List:</h2>
 
@@ -53,64 +53,83 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">1.</span>
                 </div>
-                <input type="text" id="listItem" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-                <p id="itemOne"></p>
-                <p> - </p>
-                <p id="itemOne1"></p>
+                <form autocomplete="off" class="searchBar">
+                    <div class="autocomplete" style="width:100%;">
+                        <input id="list1" type="text" name="mySearch" placeholder="Item">
+                    </div>
+                </form>
+                <p id="itemOne" class="price"></p>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">2.</span>
                 </div>
-                <input type="text" id="listItem2" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-                <p id="itemTwo"></p>
-                <p> - </p>
-                <p id="itemTwo2"></p>
+                <form autocomplete="off" class="searchBar">
+                    <div class="autocomplete" style="width:100%;">
+                        <input id="list2" type="text" name="mySearch" placeholder="Item">
+                    </div>
+                </form>
+                <p id="itemTwo" class="price"></p>
             </div>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">3.</span>
             </div>
-            <input type="text" id="listItem3" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemThree"></p>
-            <p> - </p>
-            <p id="itemThree3"></p>
+            <form autocomplete="off" class="searchBar">
+                <div class="autocomplete" style="width:100%;">
+                    <input id="list3" type="text" name="mySearch" placeholder="Item">
+                </div>
+            </form>
+            <p id="itemThree" class="price"></p>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">4.</span>
             </div>
-            <input type="text" id="listItem4" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemFour"></p>
+            <form autocomplete="off" class="searchBar">
+                <div class="autocomplete" style="width:100%;">
+                    <input id="list4" type="text" name="mySearch" placeholder="Item">
+                </div>
+            </form>
+            <p id="itemFour" class="price"></p>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">5.</span>
             </div>
-            <input type="text" id="listItem5" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemFive"></p>
+            <form autocomplete="off" class="searchBar">
+                <div class="autocomplete" style="width:100%;">
+                    <input id="list5" type="text" name="mySearch" placeholder="Item">
+                </div>
+            </form>
+            <p id="itemFive" class="price"></p>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">6.</span>
             </div>
-            <input type="text" id="listItem6" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemSix"></p>
+            <form autocomplete="off" class="searchBar">
+                <div class="autocomplete" style="width:100%;">
+                    <input id="list6" type="text" name="mySearch" placeholder="Item">
+                </div>
+            </form>
+            <p id="itemSix" class="price"></p>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">7.</span>
             </div>
-            <input type="text" id="listItem7" placeholder="Item" aria-label="Item" aria-describedby="basic-addon1">
-            <p id="itemSev"></p>
+            <form autocomplete="off" class="searchBar">
+                <div class="autocomplete" style="width:100%;">
+                    <input id="list7" type="text" name="mySearch" placeholder="Item">
+                </div>
+            </form>
+            <p id="itemSev" class="price"></p>
         </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">8.</span>
-            </div>
-            <input type="text" id="listItem8" placeholder="Item">
-            <p id="itemEight"></p>
+
+        <div class="input-group-prepend" id="totalCost">
+            <span class="input-group-text" id="total">Total:</span>
         </div>
 
         <!--Input for location (optional) -->
@@ -118,8 +137,10 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="input-group">Your location (optional) :</span>
             </div>
-            <input type="text" id="location" placeholder="City, Country">
+            <input type="text" id="location" placeholder="City, Country" class="enterLoc">
         </div>
+
+        <button type="button" id="load" class="le-btn btn-primary btn-lg">Load list</button>
 
         <button type="button" id="go" class="le-btn btn-primary btn-lg">Go</button>
     </div>
@@ -162,7 +183,6 @@
         </a>
     </nav>
 
-
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
@@ -186,7 +206,8 @@
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
     <script src="scripts/firebase_api_team23.js"> </script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/shoppingList.js"></script>
+    <script src="scripts/loadList.js"></script>
 
 </body>
 

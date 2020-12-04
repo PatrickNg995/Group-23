@@ -16,6 +16,13 @@ body {
     padding-bottom: 80px;
 }
 
+.content3 {
+    padding-top: 80px;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
 .navbar {
     width: 100%;
     position: fixed;

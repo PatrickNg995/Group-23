@@ -2,7 +2,7 @@ var name = localStorage.getItem("item");
 var limit;
 
 /* Gets the list of products from the database. */
-db.collection("products")
+var promise = db.collection("products")
     .get()
     .then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
@@ -70,7 +70,7 @@ var count = 0;
 var foundName = false;
 
 /* Add the name of the product if it is valid */
-setTimeout(function () {
+promise.then(function () {
     products.forEach(function () {
         while (count < products.length) {
             if (products[count] === name) {
@@ -86,7 +86,7 @@ setTimeout(function () {
             document.getElementById("prodName").innerText = "Product not found";
         }
     });
-}, 2000);
+});
 
 getPriceList();
 

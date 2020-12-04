@@ -107,7 +107,7 @@ var products;
 var item;
 
 /* Gets the list of products from the database. */
-db.collection("products")
+var promise = db.collection("products")
     .get()
     .then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
@@ -119,10 +119,11 @@ db.collection("products")
     .catch(function (error) {
         console.log("Error getting documents: ", error);
     });
-// Add a short delay for the data to be retrieved
-setTimeout(function () {
+
+/* Run autocomplete once list is retrieved. */
+promise.then(function(){
     autocomplete(document.getElementById("myInput"), products);
-}, 2000);
+});
 
 /* Locally stores the user's search term and redirects to the product page */
 function saveSearchFromUser() {
