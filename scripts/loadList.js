@@ -1,4 +1,4 @@
-/* The following 7 functions load the user's list items */
+/* The following 7 functions reads then loads the user's list items */
 function loadItem() {
     document.getElementById("load").addEventListener('click', function () {
         db.collection("Lists").doc("items")

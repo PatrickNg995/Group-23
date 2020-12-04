@@ -106,7 +106,7 @@ function autocomplete(inp, arr) {
 var products;
 var item;
 
-/* Gets the list of products from the database. */
+/* Reads the list of products from the database. */
 var promise = db.collection("products")
     .get()
     .then(function (querySnapshot) {

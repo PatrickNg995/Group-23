@@ -1,4 +1,4 @@
-/* Gets the user's name */
+/* Reads and displays the user's name */
 function readName() {
     firebase.auth().onAuthStateChanged(function (user) {
         db.collection("users").doc(user.uid)
@@ -11,7 +11,7 @@ function readName() {
 }
 readName();
 
-/* Gets the user's email */
+/* Reads and displays the user's email */
 function readEmail() {
     firebase.auth().onAuthStateChanged(function (user) {
         db.collection("users").doc(user.uid)

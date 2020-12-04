@@ -23,7 +23,7 @@ var listItem5;
 var listItem6;
 var listItem7;
 
-/* The following 7 functions get the input from the list */
+/* The following 7 functions read the input then update the list */
 function getItem() {
     document.getElementById("go").addEventListener('click', function () {
         listItem = document.getElementById("list1").value;

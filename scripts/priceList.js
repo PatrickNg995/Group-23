@@ -1,7 +1,7 @@
 var name = localStorage.getItem("item");
 var limit;
 
-/* Gets the list of products from the database. */
+/* Reads the list of products from the database. */
 var promise = db.collection("products")
     .get()
     .then(function (querySnapshot) {
@@ -19,7 +19,7 @@ var link;
 var div;
 var storeList;
 
-/* Gets the list of prices for the searched product from the database. */
+/* Reads the list of prices for the searched product from the database. */
 function getPriceList() {
     db.collection("prices").doc(name)
         .get()
@@ -48,7 +48,7 @@ function getPriceList() {
         })
 }
 
-/* Gets the links to the store pages */
+/* Reads and assigns the links to the store pages */
 function getLinks() {
     db.collection("links").doc(name)
         .get()
@@ -75,11 +75,11 @@ function getLinks() {
 var count = 0;
 var foundName = false;
 
-/* Add the name of the product if it is valid */
+/* Display the name of the product if it is valid */
 promise.then(function () {
     products.forEach(function () {
         while (count < products.length) {
-            /* If the search term matches a name in the database, display the name */
+            /* If the search term matches a name read from the database, display the name */
             if (products[count] === name) {
                 var capital = name.toUpperCase().charAt(0);
                 var length = products[count].length;
