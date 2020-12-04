@@ -26,9 +26,11 @@ function getPriceList() {
         .then(function (doc) {
             console.log(doc.data());
 
+            /* Casts all the stores into an array */
             storeList = Object.keys(doc.data());
             console.log(storeList);
 
+            /* Casts all the prices into an array */
             var priceList = Object.values(doc.data());
             console.log(priceList);
 
@@ -36,6 +38,7 @@ function getPriceList() {
 
             limit = storeList.length;
 
+            /* Add every store and their matching price to the table of stores and prices */
             for (var i = 0; i < limit; i++) {
                 var price = priceList[i];
                 var store = storeList[i];
@@ -52,11 +55,13 @@ function getLinks() {
         .then(function (doc) {
             console.log(doc.data());
 
+            /* Casts all the links into an array */
             var linkList = Object.values(doc.data());
 
             limit = linkList.length;
             console.log(linkList);
 
+            /* Retrieve the link of the matching store, then add it to the shop button */
             for (var i = 0; i < limit; i++) {
                 var store = storeList[i];
                 link = doc.get(store);
@@ -74,6 +79,7 @@ var foundName = false;
 promise.then(function () {
     products.forEach(function () {
         while (count < products.length) {
+            /* If the search term matches a name in the database, display the name */
             if (products[count] === name) {
                 var capital = name.toUpperCase().charAt(0);
                 var length = products[count].length;
@@ -83,6 +89,7 @@ promise.then(function () {
             }
             count++;
         }
+        /* If the name is not valid, tell the user */
         if (foundName = false) {
             document.getElementById("prodName").innerText = "Product not found";
         }

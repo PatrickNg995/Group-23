@@ -84,12 +84,24 @@ It has the following subfolders and files:
 
 
 Firebase hosting files: 
-├── .firebaserc...
+├── .firebase
+├── .firebaserc
+├── .firebase.json
+├── .firebase.indexes.json
+└── .firestore.rules
+
+Sources: 
+├── W3Schools (code templates)
+├── Bootstrap (front end components)
+├── Firebase (libraries, database)
+├── Apple (pictures)
+├── Samsung (pictures)
+└── Huawei (pictures)
 
 
 ```
 
 ## Members + Contributions
-Patrick Ng: index.html,
-Spence Morrison: shoppinglist.html,
-Yang Sun: Category.html,
+Patrick Ng: index.html, login.html, searchProduct.html, search.js, addToList.js (partial), error.js, loadList.js (partial), priceList.js, saveCategory.js (partial), productProfile.js
+Spence Morrison: shoppinglist.html, accountInfo.html, shoppingList.js, addToList.js (partial), accInfo.js, loadList.js (partial)
+Yang Sun: category.html, productList.html, electronicList.html, iphone.html, huawei.html, saveCateogry.js (partial)

@@ -4,7 +4,7 @@ function getUserLocation() {
         var location = document.getElementById("location").value;
         console.log(location);
 
-        //If user is signed in save it to firebase db-
+        /* If user is signed in save it to firebase db */
         firebase.auth().onAuthStateChanged(function (user) {
             db.collection("users").doc(user.uid)
                 .update({

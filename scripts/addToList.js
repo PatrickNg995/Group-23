@@ -17,11 +17,13 @@ function addToList() {
                 var listNumber = Object.keys(doc.data());
                 console.log(listNumber);
 
+                /* Check if the list has an open spot, if found add to list and stop */
                 for (i = 0; i < list.length; i++) {
                     var itemNum = listNumber[i];
                     if (list[i] === '') {
                         console.log(itemNum);
                         db.collection("Lists").doc("items")
+                            /* Update the open slot with the product */
                             .update({
                                 [itemNum]: item
                             })

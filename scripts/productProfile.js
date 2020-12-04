@@ -6,7 +6,7 @@ function getDescription() {
         .get()
         .then(function (doc) {
             console.log(doc.data());
-
+            
             var description = Object.values(doc.data());
 
             var link = "product.html";
